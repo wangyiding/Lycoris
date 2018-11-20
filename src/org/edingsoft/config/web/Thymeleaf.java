@@ -10,9 +10,9 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
-@Configuration
-@ComponentScan("org.edingsoft")
-@EnableWebMvc
+//@Configuration
+//@ComponentScan("org.edingsoft")
+//@EnableWebMvc
 public class Thymeleaf {
 	@Autowired
 	ServletContext ctx;

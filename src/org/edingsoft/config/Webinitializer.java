@@ -15,8 +15,8 @@ public class Webinitializer implements WebApplicationInitializer {
 	@Override
 	public void onStartup(ServletContext ctx) throws ServletException {
 		AnnotationConfigWebApplicationContext  springctx=new AnnotationConfigWebApplicationContext ();
-//		springctx.register(WebConfig.class);
-		springctx.register(Thymeleaf.class);
+		springctx.register(WebConfig.class);
+//		springctx.register(Thymeleaf.class);
 		springctx.setServletContext(ctx); 
 		Dynamic servlet=ctx.addServlet("dispatcher", new DispatcherServlet(springctx) );
 		servlet.addMapping("/");
