@@ -14,7 +14,7 @@ import com.alibaba.druid.pool.DruidDataSource;
 public class DBconfig {
 		@Value("${url}")
 		String url;
-		@Value("${userName}")
+		@Value("${dbuserName}")
 		String userName;
 		@Value("${passWord}")
 		String passWord;
